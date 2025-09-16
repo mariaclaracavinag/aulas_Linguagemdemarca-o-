@@ -1,0 +1,72 @@
+/* ---------- ESTILO DA HOME ---------- */
+body.home {
+    background-color: bisque;
+    text-align: center;
+}
+
+#imagem-home {
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+}
+
+.quadrado-home {
+    border-radius: 10%;
+    border: 2px solid darkblue;
+    border-radius: 10%;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+/* ---------- ESTILO DO SOBRE ---------- */
+body.sobre {
+    background-color: bisque;
+    text-align: center;
+}
+
+#imagem-sobre {
+    border-radius: 20%;
+    width: 220px;
+    height: 300px;
+}
+
+.quadrado-sobre {
+    border: 2px solid darkblue;
+    border-radius: 10%;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+/* ---------- ESTILO DO CONTATO ---------- */
+body.contato {
+    background-color:bisque;
+    text-align: center;
+}
+
+.quadrado-contato {
+    border: 2px solid darkblue;
+    border-radius: 10%;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+.link{
+    text-decoration-line: none;
+    color: rgb(96, 96, 228);
+}
+.link2{
+    text-decoration-line: none;
+    color: rgb(96, 96, 228);
+}
+.link3{
+    text-decoration-line: none;
+    color: rgb(96, 96, 228);
+}

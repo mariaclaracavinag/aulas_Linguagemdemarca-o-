@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site sobre Gatos</title>
+    <style>
+        /* ===== Estilos gerais ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+        }
+
+        header {
+            background-color: #aa7444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #aa7444;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        h1, h2 {
+            color: #aa7444;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            object-fit: cover;
+            margin: 10px;
+            border: 3px solid #aa7444;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #aa7444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        a.externo {
+            color: #aa7444;
+            text-decoration: none;
+        }
+
+        a.externo:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🐱 Tudo sobre Gatos</h1>
+        <p>Curiosidades, raças, cuidados e fotos encantadoras</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#origem">Origem</a>
+        <a href="#racas">Raças</a>
+        <a href="#comportamento">Comportamento</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#links">Links Úteis</a>
+    </nav>
+
+    <!-- ===== Seção Sobre ===== -->
+    <section id="sobre">
+        <h2>Sobre os Gatos</h2>
+        <p>Os gatos são animais domésticos conhecidos por sua independência, curiosidade e companheirismo. 
+        Eles possuem sentidos aguçados, incluindo visão noturna excelente e audição apurada. 
+        Além de serem caçadores naturais, são ótimos companheiros para humanos.</p>
+
+        <h3>Curiosidades:</h3>
+        <ul>
+            <li>Gatos podem dormir de 12 a 16 horas por dia.</li>
+            <li>O ronronar de um gato pode reduzir o estresse humano.</li>
+            <li>Existem gatos que podem correr até 48 km/h!</li>
+            <li>Os bigodes ajudam a medir espaços e detectar movimentos.</li>
+        </ul>
+    </section>
+
+    <!-- ===== Seção Origem ===== -->
+    <section id="origem">
+        <h2>Origem da Espécie</h2>
+        <p>Os gatos domésticos (<em>Felis catus</em>) descendem do gato selvagem africano. 
+        Acredita-se que tenham sido domesticados há cerca de 9 mil anos no Oriente Médio. 
+        No Egito Antigo, eram considerados sagrados, associados à deusa Bastet, e protegiam grãos contra ratos e cobras.</p>
+    </section>
+
+    <!-- ===== Seção Raças ===== -->
+    <section id="racas">
+        <h2>Principais Raças de Gatos</h2>
+        <ul>
+            <li><strong>Persa:</strong> pelagem longa, dócil e elegante.</li>
+            <li><strong>Siamês:</strong> vocal, carinhoso e muito inteligente.</li>
+            <li><strong>Maine Coon:</strong> gigante, amigável e muito peludo.</li>
+            <li><strong>Ragdoll:</strong> relaxado, amoroso e se deixa abraçar facilmente.</li>
+            <li><strong>Bengal:</strong> ativo, curioso e com aparência selvagem.</li>
+        </ul>
+    </section>
+
+    <!-- ===== Seção Comportamento ===== -->
+    <section id="comportamento">
+        <h2>Comportamento e Cuidados</h2>
+        <ul>
+            <li>Gatos gostam de rotina, então mantenha horários regulares para alimentação.</li>
+            <li>É importante escovar o pelo regularmente, principalmente raças de pelagem longa.</li>
+            <li>Brinquedos ajudam a estimular a mente e os instintos naturais.</li>
+            <li>Vacinação e visitas ao veterinário são essenciais para saúde e longevidade.</li>
+            <li>Gatos gostam de arranhar, então ofereça arranhadores para proteger móveis.</li>
+        </ul>
+    </section>
+
+    <!-- ===== Seção Galeria ===== -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria de Fotos</h2>
+        <img src="./images/Cat.jpg" alt="Gato 1">
+    <img src="./images/cat2.jpg" alt="Gato 2">
+    <img src="./images/cat3.jpg" alt="Gato 3">
+    <img src="./images/cat4.jpg" alt="Gato 4">
+    <img src="./images/cat5.jpg" alt="Gato 5">
+    <img src="./images/cat6.jpg" alt="Gato 6">
+    <img src="./images/cat7.jpg" alt="Gato 7">
+    <img src="./images/cat8.jpg" alt="Gato 8">
+    <img src="./images/cat9.jpg" alt="Gato 9">
+    <img src="./images/cat10.jpg" alt="Gato 10">
+    <img src="./images/cat11.jpg" alt="Gato 11">
+    <img src="./images/cat12.jpg" alt="Gato 12">
+    <img src="./images/cat13.jpg" alt="Gato 13">
+    </section>
+
+    <!-- ===== Seção Links Úteis ===== -->
+    <section id="links">
+        <h2>Links Úteis</h2>
+        <ul>
+            <li><a href="https://www.fundacaocanastra.org.br/" target="_blank" class="externo">Adoção de Gatos</a></li>
+            <li><a href="https://www.felinehealth.org/" target="_blank" class="externo">Saúde Felina</a></li>
+            <li><a href="https://www.petlove.com.br/" target="_blank" class="externo">Produtos para Gatos</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Site sobre Gatos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
