@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sakura</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fffdfd;
+            color: #333;
+        }
+
+        header {
+            background-color: #e08dac; /* rosa sofisticado */
+            color: white;
+            padding: 18px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe4ec;
+        }
+
+        /* Seções */
+        section {
+            padding: 70px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        #home {
+            background: url('https://images.unsplash.com/photo-1541542684-4c1dc106c5f0') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            backdrop-filter: brightness(0.8);
+        }
+
+        #home h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        #sobre p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #555;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #cardapio h2, #galeria h2, #contato h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+            color: #e08dac;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .prato {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            padding: 18px;
+            transition: transform 0.3s;
+        }
+
+        .prato:hover {
+            transform: translateY(-5px);
+        }
+
+        .prato img {
+            width: 100%;
+            border-radius: 12px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .prato h3 {
+            margin: 15px 0 8px;
+            color: #e08dac;
+            font-size: 1.3em;
+        }
+
+        .prato p {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .prato span {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .galeria-grid img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .galeria-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        form input, form textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #e08dac;
+        }
+
+        form button {
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background-color: #e08dac;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: #c06c8d;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            color: #555;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+
+        footer p:first-child {
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍣 Sakura</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao Sakura</h2>
+        <p>Alta gastronomia japonesa em um ambiente sofisticado</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            O Sakura é um restaurante japonês que une tradição e sofisticação. 
+            Com um ambiente elegante e pratos preparados com ingredientes selecionados, 
+            proporcionamos uma experiência gastronômica única e memorável.
+        </p>
+    </section>
+
+    <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="menu-grid">
+            <div class="prato">
+                <img src="https://images.unsplash.com/photo-1570780651325-16c59c2f1d82" alt="Sushi">
+                <h3>Sushi Premium</h3>
+                <p>Seleção especial de sushis finos com peixes nobres.</p>
+                <span>R$ 59,90</span>
+            </div>
+            <div class="prato">
+                <img src="https://images.unsplash.com/photo-1606788075761-798c1c1aa3ed" alt="Sashimi">
+                <h3>Sashimi Gourmet</h3>
+                <p>Fatias delicadas de salmão, atum e peixe branco.</p>
+                <span>R$ 49,90</span>
+            </div>
+            <div class="prato">
+                <img src="https://images.unsplash.com/photo-1606787655129-6d733bfcf1f0" alt="Yakissoba">
+                <h3>Yakissoba</h3>
+                <p>Macarrão oriental com legumes frescos e carne ao molho shoyu.</p>
+                <span>R$ 34,90</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria-grid">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Prato japonês">
+            <img src="https://images.unsplash.com/photo-1589118949245-7d38baf380d6" alt="Sushi variado">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Sashimi salmão">
+            <img src="https://images.unsplash.com/photo-1553621043-f6e147245754" alt="Comida japonesa">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>📍 Rua da Harmonia, 123 - São Paulo | ☎️ (11) 98765-4321</p>
+        <p>&copy; 2025 Restaurante Sakura - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
