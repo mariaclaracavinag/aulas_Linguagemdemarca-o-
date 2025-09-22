@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Insta </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f0f8; /* rosa clarinho */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            color: #d81b60;
+            margin-bottom: 20px;
+        }
+
+        .perfil {
+            text-align: center;
+            background-color: #f3c5d4;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .perfil img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+
+        .perfil h2 {
+            margin: 5px 0;
+        }
+
+        .perfil p {
+            margin: 5px 0 10px 0;
+        }
+
+        .perfil a {
+            display: inline-block;
+            text-decoration: none;
+            color: #880e4f;
+            padding: 6px 12px;
+            border: 1px solid #880e4f;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        /* Feed estilo Instagram - duas colunas */
+        .feed {
+            text-align: center; /* centraliza as postagens inline-block */
+        }
+
+        .postagem {
+            display: inline-block;
+            width: 500px; /* mesma largura da imagem */
+            margin: 10px auto; /* centraliza horizontalmente */
+            background-color: #f7a1c4;
+            border-radius: 8px;
+            text-align: left;
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .postagem img {
+            width: 800px;
+            height: 500px;
+            border-radius: 0 0;
+            display: block; /* para poder centralizar o bloco */
+        }
+
+        .postagem p {
+            margin: 10px;
+        }
+
+        .postagem a {
+            display: inline-block;
+            margin: 5px 10px 10px 10px;
+            text-decoration: none;
+            color: #880e4f;
+        }
+
+        @media (max-width: 850px) {
+            .postagem {
+                width: 100%; 
+            }
+            .postagem img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>mariaclaracavinag</h1>
+
+    <div class="perfil">
+        <img src="./images/baneer.jpeg" alt="Foto de perfil">
+        <h2>Maria Clara</h2>
+        <p>living📷</p>
+        <a href="#">Seguir</a>
+    </div>
+
+    <div class="feed">
+        <div class="postagem">
+            <img src="./images/rosas.png" alt="Casa das Rosas">
+            <p>🌹 Casa das Rosas: arquitetura incrível e jardim encantador</p>
+            <a href="#">Curtir</a>
+            <a href="#">Comentar</a>
+        </div>
+
+        <div class="postagem">
+            <img src="./images/burguer.png" alt="Holy Burger">
+            <p>🍔 Holy Burger: hambúrguer artesanal com vibe urbana</p>
+            <a href="#">Curtir</a>
+            <a href="#">Comentar</a>
+        </div>
+
+        <div class="postagem">
+            <img src="./images/pinacoteca.png" alt="Pinacoteca">
+            <p>🖼️ Pinacoteca: arte clássica e contemporânea de SP</p>
+            <a href="#">Curtir</a>
+            <a href="#">Comentar</a>
+        </div>
+
+        <div class="postagem">
+            <img src="./images/liberdade.png" alt="Liberdade">
+            <p>🍱 Liberdade: cultura japonesa e gastronomia incrível</p>
+            <a href="#">Curtir</a>
+            <a href="#">Comentar</a>
+        </div>
+
+        <div class="postagem">
+            <img src="./images/kreme.png" alt="Kryspe Kreme SP">
+            <p>🍩 Um doce momento na Kryspe Kreme em SP | Experimentei os donuts mais fofos e deliciosos!</p>
+            <a href="#">Curtir</a>
+            <a href="#">Comentar</a>
+        </div>
+    </div>
+</body>
+</html>

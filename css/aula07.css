@@ -1,0 +1,26 @@
+body{
+    font-family:'Times New Roman';
+    margin: 30px;
+}
+h1{
+    font-size: 28pt;
+    text-align: center;
+    margin-bottom: 20px;
+    /*margin: 20px 40px 15px 15px; left,top,right,e bottom*/
+}
+.block{
+    background-color: rgb(207, 97, 134);
+    margin-bottom: 20px;
+}
+.inline{
+    display : inline;
+    background-color: rgb(207, 97, 134);
+    margin-bottom: 30px;
+}
+.inline-block{
+    display: inline-block;
+    width:200px;
+    height:100px;
+    margin-bottom: 15px;
+    background-color: rgb(221, 109, 156);
+}

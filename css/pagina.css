@@ -1,0 +1,46 @@
+body{
+    font-family:'Times New Roman';
+    margin: 30px;
+    background-color: rgb(255, 240, 245); /* rosinha claro */
+}
+
+h1{
+    font-size: 32pt;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(92, 18, 47); /* vinho elegante */
+}
+
+.block{
+    background-color: rgb(207, 97, 134);
+    color: white;
+    padding: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.inline-block{
+    display: inline-block;
+    width: 200px; /* ajustei um pouco menor para melhor visual */
+    margin: 15px;
+    background-color: rgb(221, 109, 156);
+    color: white;
+    text-align: center;
+    vertical-align: top;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+
+.inline-block img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    margin-top:0;
+}
