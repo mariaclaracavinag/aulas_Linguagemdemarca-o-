@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 60px; 
+}
+main{
+  height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+section{
+  display: flex;
+  justify-content: center;
+  top: 200px;
+  
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgb(255, 156, 195);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+   font-family: "Bodoni Moda", serif;
+}
+
+.aneis {
+background: rgb(255, 156, 195);
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  font-family: "Bodoni Moda", serif;
+  z-index:10;
+}
+p {
+font-family: "Lexend Deca", sans-serif;
+}
+.colares {
+ background: rgb(255, 156, 195);
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  font-family: "Bodoni Moda", serif;
+  z-index:10;
+}
+.brincos{
+  background: rgb(255, 156, 195);
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  font-family: "Bodoni Moda", serif;
+  z-index:10;
+}
+
+.item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.wpp{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+}

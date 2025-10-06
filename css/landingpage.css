@@ -1,0 +1,262 @@
+:root{
+  --rose-gold: #f996a5;
+  --off-white: #f8f6f3;
+  --yellow: #ffd700;
+  --text-dark: #2c2c2c;
+  --text-light: #555;
+  --font-primary: 'Helvetica', sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: var(--font-primary);
+}
+
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--off-white);
+  position: sticky;
+  top:0;
+  z-index:1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header .logo img{
+  width: 200px;
+}
+
+header nav ul{
+  display:flex;
+  list-style:none;
+  gap:2rem;
+}
+
+header nav ul li a{
+  text-decoration:none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover{
+  color: var(--rose-gold);
+}
+
+header .carrinho{
+  font-size:1.2rem;
+  position:relative;
+}
+
+header .carrinho .contador{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  background-color: var(--yellow);
+  color:#000;
+  border-radius:50%;
+  padding: 0 6px;
+  font-size:0.8rem;
+}
+
+#hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:5rem 2rem;
+  background-color:#fff;
+}
+
+.hero-text h1{
+  font-size:3rem;
+  color: var(--text-dark);
+  margin-bottom:1rem;
+}
+
+.hero-text p{
+  font-size:1.2rem;
+  margin-bottom:2rem;
+  color: var(--text-light);
+}
+
+.hero-img img{
+  width:450px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.botao{
+  background-color: var(--rose-gold);
+  color:#fff;
+  border:none;
+  padding:0.75rem 2rem;
+  border-radius:50px;
+  font-weight:700;
+  cursor:pointer;
+  transition: all 0.3s;
+}
+
+.botao:hover{
+  background-color:#d77c8d;
+  transform: translateY(-2px);
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+#sobre{
+  display:flex;
+  align-items:center;
+  gap:2rem;
+  padding:5rem 2rem;
+  background-color: var(--off-white);
+}
+
+#sobre .sobre-img img{
+  width:400px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+.texto{
+  width:50%;
+  font-size:1.1rem;
+  line-height:1.7;
+  color: var(--text-dark);
+}
+
+.texto::first-letter{
+  font-size:2.5rem;
+  font-weight:bold;
+  color: var(--rose-gold);
+}
+
+.texto::first-line{
+  text-transform:uppercase;
+}
+
+#colecoes{
+  padding:5rem 2rem;
+  text-align:center;
+  background-color:#fff;
+}
+
+#colecoes h2{
+  font-size:2rem;
+  margin-bottom:2rem;
+  color: var(--text-dark);
+}
+
+.lista{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1rem;
+  list-style:none;
+}
+
+.lista li{
+  background-color: var(--off-white);
+  padding:1rem 2rem;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  font-weight:500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lista li:nth-child(1){
+  border:2px solid var(--rose-gold);
+  font-weight:700;
+}
+
+.lista li:hover{
+  transform: translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+#depoimentos{
+  padding:5rem 2rem;
+  background-color: var(--off-white);
+  text-align:center;
+}
+
+#depoimentos h2{
+  font-size:2rem;
+  margin-bottom:3rem;
+  color: var(--text-dark);
+}
+
+.depoimento{
+  margin-bottom:2rem;
+  font-size:1rem;
+  color: var(--text-light);
+}
+
+footer{
+  background-color: var(--rose-gold);
+  color:#fff;
+  padding:3rem 2rem;
+  text-align:center;
+}
+
+.footer-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  gap:2rem;
+  margin-bottom:1.5rem;
+}
+
+.footer-contato p{
+  margin:0.5rem 0;
+  font-size:1rem;
+}
+
+.footer-contato a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.footer-contato a:hover{
+  color: #ffd700; 
+}
+
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+}
+
+.footer-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.footer-links a:hover{
+  color: #ffd700;
+}
+
+.footer-redes a img{
+  width:35px;
+  height:35px;
+  margin:0 8px;
+  transition: transform 0.3s;
+}
+
+.footer-redes a img:hover{
+  transform: scale(1.1);
+}
+
+
+footer p.copyright{
+  font-size:0.9rem;
+  color:#fff;
+}
+

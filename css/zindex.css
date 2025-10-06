@@ -1,0 +1,32 @@
+h1{
+    font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+div{
+    border: 2px rgb(7, 6, 6);
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    height: 200px;
+    width:200px;
+    padding: 20px;
+    position: fixed;
+}
+.box1{
+    background-color: rgb(83, 224, 224);
+}
+.box2{
+    background-color: rgb(255, 44, 174);
+    left: 50px;
+    top: 100px;
+    z-index: 5; /*nivel de profundidade, se eu colocar negativo fica mais atras*/
+}
+.box3{
+    background-color: rgb(251, 248, 66);
+    top: 150px;
+    left: 100px; 
+}
