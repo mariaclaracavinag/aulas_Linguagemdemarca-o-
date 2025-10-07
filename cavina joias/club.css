@@ -1,0 +1,269 @@
+:root {
+  --rose-gold: #f996a5;
+  --off-white: #f8f6f3;
+  --yellow: #ffd700;
+  --text-dark: #2c2c2c;
+  --text-light: #555;
+  --font-primary: 'Helvetica', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--off-white);
+  padding: 1.7rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: var(--rose-gold);
+}
+
+header .logo img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--rose-gold);
+}
+
+/* Cavina Club Hero */
+#club-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: var(--off-white);
+  flex-wrap: wrap;
+}
+
+.club-hero-texto {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.club-hero-texto h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.club-hero-texto p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.club-hero-texto ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.club-hero-texto ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.club-hero-texto ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--rose-gold);
+}
+
+#club-galeria {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#club-galeria h2 {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.galeria-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.galeria-card {
+  background-color: var(--off-white);
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.galeria-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.galeria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+#club-cadastro {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+#club-cadastro h2 {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.club-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.club-form input {
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--text-light);
+  min-width: 200px;
+  font-size: 1rem;
+}
+
+.club-form button {
+  background-color: var(--rose-gold);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.club-form button:hover {
+  background-color: #d77c8d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--rose-gold);
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contato p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.footer-contato a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer-contato img {
+  width: 35px;
+  height: 35px;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.footer-contato a:hover {
+  color: #ffd700; 
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+}
+
+.footer-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+  text-align: center;
+}
+
+.footer-links a:hover{
+  color: #ffd700;
+  text-align: center;
+}
+
+.footer-redes a img{
+  width:35px;
+  height:35px;
+  margin:0 8px;
+  transition: transform 0.3s;
+}
+
+footer p.copyright{
+  font-size:0.9rem;
+  color:#fff;
+  text-align: center;
+}
