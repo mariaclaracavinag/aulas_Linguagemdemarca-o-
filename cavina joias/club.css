@@ -1,5 +1,6 @@
 :root {
   --rose-gold: #f996a5;
+  --rose-gold2: #c16b78;
   --off-white: #f8f6f3;
   --yellow: #ffd700;
   --text-dark: #2c2c2c;
@@ -55,7 +56,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: var(--rose-gold);
+  color: var(--rose-gold2);
 }
 
 /* Cavina Club Hero */

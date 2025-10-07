@@ -102,6 +102,8 @@ header .carrinho .contador {
   border-radius: 50px;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none; /* para o <a> não ter sublinhado */
+  display: inline-block; /* para ficar igual ao botão */
   transition: all 0.3s;
 }
 
@@ -110,6 +112,7 @@ header .carrinho .contador {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 
 #sobre {
   display: flex;
