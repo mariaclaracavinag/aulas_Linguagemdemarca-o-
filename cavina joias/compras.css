@@ -8,7 +8,12 @@
   --text-light: #555;
   --font-primary: 'Helvetica', sans-serif;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
 body {
   margin: 0;
   font-family: var(--font-primary);
@@ -20,16 +25,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--rose-gold);
+  background-color: var(--off-white);
   padding: 1.7rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: var(--rose-gold);
 }
 
 header .logo img {
   width: 100px;
+  position: absolute;
+  top: 0;
 }
 
 header nav ul {
@@ -49,24 +57,14 @@ header nav ul li a:hover {
   color: var(--rose-gold2);
 }
 
-/* HERO */
 .hero {
   position: relative;
   text-align: center;
   padding: 5rem 2rem;
-  color: #fff;
+  color: var(--rose-gold2);
 }
 
-.hero img.fundo-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.6;
-}
+
 
 .hero-content {
   position: relative;
@@ -105,13 +103,12 @@ header nav ul li a:hover {
   color: #fff;
 }
 
-/* PRODUTOS FAMOSOS */
-.famosas {
+.destaques {
   padding: 3rem 2rem;
   text-align: center;
 }
 
-.famosas h2 {
+.destaques h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -135,7 +132,8 @@ header nav ul li a:hover {
 }
 
 .produto img {
-  max-width: 100%;
+  width: 230px ;
+  height:230px;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -165,7 +163,6 @@ header nav ul li a:hover {
   color: var(--text-dark);
 }
 
-/* FOOTER */
 footer {
   background-color: var(--rose-gold);
   color: #fff;
