@@ -1,0 +1,241 @@
+
+:root {
+  --soft-blue: #9ab8d4;
+  --dark-blue: #6c8ca3;
+  --off-white: #fbfaf8;
+  --soft-gold: #d4b05b;
+  --text-dark: #1e1e1e;
+  --text-light: #666;
+  --font-primary: 'Quicksand', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--soft-blue);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(30,30,30,0.06);
+  color: #fff;
+}
+
+header .logo img {
+  width: 120px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--dark-blue);
+}
+
+#inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f8ff 100%);
+  gap: 2rem;
+}
+
+.inicio-texto {
+  flex: 1 1 460px;
+  max-width: 620px;
+}
+
+.inicio-texto h1 {
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.inicio-texto p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 1.8rem;
+}
+
+.inicio-img {
+  flex: 0 1 420px;
+  text-align: right;
+}
+
+.inicio-img img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(33,33,33,0.08);
+}
+
+
+.botao {
+  background-color: var(--dark-blue);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.26s;
+  box-shadow: 0 6px 18px rgba(108,140,163,0.18);
+}
+
+.botao:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+
+section {
+  padding: 4.5rem 2rem;
+}
+
+
+#colecoes {
+  text-align: center;
+  background-color: #fff;
+}
+
+#colecoes h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.grid-colecoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: var(--off-white);
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(30,30,30,0.05);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.28s, box-shadow 0.28s;
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(30,30,30,0.09);
+}
+
+
+#recursos h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+
+#depoimentos {
+  background-color: var(--off-white);
+  text-align: center;
+}
+
+#depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  color: var(--text-dark);
+}
+
+.depoimento {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+
+footer {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 2.5rem 1.6rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-contato p,
+.footer-links a {
+  margin: 0.3rem 0;
+  color: #fff;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--soft-gold);
+}
+
+footer .copyright {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 880px) {
+  #inicio { flex-direction: column; text-align: center; }
+  .inicio-img { order: 2; text-align: center; }
+  .inicio-texto { order: 1; }
+  .grid-colecoes { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .inicio-texto h1 { font-size: 1.8rem; }
+  .grid-colecoes { grid-template-columns: 1fr; }
+  header nav ul { flex-direction: column; gap: 0.8rem; margin-top: 0.5rem; }
+}
+
+
